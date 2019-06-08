@@ -1,0 +1,236 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Village Page</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="villagepage.css">
+    </head>
+    <body>
+    <header>
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+            <a class="navbar-brand" href="http://scholarx-api.rc">
+                <img src="http://scholarx-api.rc/img/ScholarX.png" alt="logo" class="img-responsive" style="height: 30px; width: 96px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <form class="form-inline navbar-form">
+                <div class="input-group navbar-input">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1"><img src="http://scholarx-api.rc/img/search.png" alt="search" class="img-responsive"></span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Search for scholarship..." aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+            </form>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <div class="mr-auto"></div>
+                <ul class="navbar-nav navbar-right">
+                            <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Students
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="http://scholarx-api.rc/student/secondary/fundrequest/create">Create Fund Request</a>
+                            <a class="dropdown-item" href="#">Find Scholarship</a>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target=".gethelp-Modal">Get Help</a>
+                        </div>
+                    </li>
+        
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Sponsor
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="http://scholarx-api.rc/village">Fund Education</a>
+                            <a class="dropdown-item" href="http://scholarx-api.rc/join/sponsor">Start Scholarship Fund</a>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target=".gethelp-Modal">Get Help</a>
+                        </div>
+                    </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        More
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item disabled" href="#">About Us</a>
+                        <a class="dropdown-item" href="http://scholarx-api.rc/team">Team</a>
+                        <a class="dropdown-item" href="http://scholarx-api.rc/team">Advisers</a>
+                        <a class="dropdown-item" href="http://scholarx-api.rc/team">Media Features</a>
+                        <a class="dropdown-item" href="http://scholarx-api.rc/impact">Impact</a>
+                        <a class="dropdown-item" href="http://scholarx-api.rc/blog">Blog</a>
+                        <a class="dropdown-item" target="_blank" href="https://skillsfund.herokuapp.com">SkillsFund <span class="skillsfund-new">(New)</span></a>
+                        <a class="dropdown-item disabled" href="#">Download App</a>
+                        <a class="dropdown-item" href="https://itunes.apple.com/us/app/scholarx/id1135916663?ls=1&amp;mt=8">IOS</a>
+                        <a class="dropdown-item" href="https://play.google.com/store/apps/details?id=com.scholarx.mobile2">Android</a>
+                        <a class="dropdown-item" href="https://wa.me/2349082463268" target="_blank"> <span> Chat with us on </span> <br> 09082463268</a>
+                    </div>
+                </li>    
+                <li class="nav-item">
+                    <hr class="vertical">
+                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://scholarx-api.rc/login">Log In</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link joinus" href="http://scholarx-api.rc/join-us">Join Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+    </header> 
+    <main>
+        <!-- carousel -->
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                                <img src="http://scholarx-api.rc/img/intro-bg(1).jpg" class="d-block w-100 img-responsive" alt="background image" style="width: 100%;">
+                                <div class="carousel-caption">
+                                        <h1 class="font-weight-bolder1">Village By ScholarX</h1>
+                                        <div class="d-flex flex-row justify-content-center m-5 mb-5">
+                                            <div class="p-2 text-large font-weight-bolder" style="font-size: 30px;">
+                                                429 
+                                                <p class="p-2 font-weight-lighter">Fund request</p>
+                                            </div>
+                                                <div class="p-2 font-weight-bolder" style="font-size: 30px;">
+                                                    N3,488,427
+                                                    <p class="p-2 font-weight-lighter">Raised</p>
+                                                </div>
+                                                <div class="p-2 font-weight-bolder" style="font-size: 30px;">
+                                                    117
+                                                    <p class="p-2 font-weight-lighter">Fully funded</p>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+        <!-- end of carousel -->
+            </div>
+            <div class="container">
+                    <div class="row justify-content-between mr-5 mt-5">
+                        <div class="col-md-2">
+                                <div class="card" style="width: 18rem;">
+                                        <img src="campaignpersion(1).jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                        <h5 class="card-title">Title of fundraising</h5>
+                                        <p class="card-text">This is a brief note about what this fundraising is about. Only 2 lines...</p>
+                                        <small class="text-black-50">Last duration 1 day ago</small><small class="ml-5" style="color: #96B46B">8donations</small>
+                                        <div class="fund-progress-bar">
+                                                <span class="fund-progress-bar-fill" style="width: 40%;"></span>
+                                            </div>
+                                            <small>N5,000 raised of N20,000</small>
+                                        </div>
+                                    </div>
+                        </div>
+                        <div class="col-md-2">
+                                <div class="card" style="width: 18rem;">
+                                        <img src="campaignperson(3).jpeg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                        <h5 class="card-title">Title of fundraising</h5>
+                                        <p class="card-text">This is a brief note about what this fundraising is about. Only 2 lines...</p>
+                                        <small class="text-black-50">Last duration 1 day ago</small><small class="ml-5" style="color: #96B46B">8donations</small>
+                                        <div class="fund-progress-bar">
+                                                <span class="fund-progress-bar-fill" style="width: 40%;"></span>
+                                            </div>
+                                            <small>N5,000 raised of N20,000</small>
+                                        </div>
+                                    </div>
+                        </div>
+                        <div class="col-md-2">
+                                <div class="card" style="width: 18rem;">
+                                        <img src="campaignpersion(4).jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                        <h5 class="card-title">Title of fundraising</h5>
+                                        <p class="card-text">This is a brief note about what this fundraising is about. Only 2 lines...</p>
+                                        <small class="text-black-50">Last duration 1 day ago</small><small class="ml-5" style="color: #96B46B">8donations</small>
+                                        <div class="fund-progress-bar">
+                                                <span class="fund-progress-bar-fill" style="width: 40%;"></span>
+                                            </div>
+                                            <small>N5,000 raised of N20,000</small>
+                                        </div>
+                                    </div>
+                        </div>
+                        <div class="col-md-2">
+                                <div class="card" style="width: 18rem;">
+                                        <img src="campaignperson(2).jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                        <h5 class="card-title">Title of fundraising</h5>
+                                        <p class="card-text">This is a brief note about what this fundraising is about. Only 2 lines...</p>
+                                        <small class="text-black-50">Last duration 1 day ago</small><small class="ml-5" style="color: #96B46B">8donations</small>
+                                        <div class="fund-progress-bar">
+                                                <span class="fund-progress-bar-fill" style="width: 40%;"></span>
+                                            </div>
+                                            <small>N5,000 raised of N20,000</small>
+                                        </div>
+                                    </div>
+                        </div>
+                    </div>  
+                    <!-- second row of title of fundraising -->
+                            <div class="row justify-content-between mr-5 mt-5">
+                                <div class="col-md-2">
+                                        <div class="card" style="width: 18rem;">
+                                                <img src="scholarxvillage1.png" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                <h5 class="card-title">Title of fundraising</h5>
+                                                <p class="card-text">This is a brief note about what this fundraising is about. Only 2 lines...</p>
+                                                <small class="text-black-50">Last duration 1 day ago</small><small class="ml-5" style="color: #96B46B">8donations</small>
+                                                <div class="fund-progress-bar">
+                                                        <span class="fund-progress-bar-fill" style="width: 40%;"></span>
+                                                    </div>
+                                                    <small>N5,000 raised of N20,000</small>
+                                                </div>
+                                            </div>
+                                </div>
+                                <div class="col-md-2">
+                                        <div class="card" style="width: 18rem;">
+                                                <img src="scholarxvillage2.png" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                <h5 class="card-title">Title of fundraising</h5>
+                                                <p class="card-text">This is a brief note about what this fundraising is about. Only 2 lines...</p>
+                                                <small class="text-black-50">Last duration 1 day ago</small><small class="ml-5" style="color: #96B46B">8donations</small>
+                                                <div class="fund-progress-bar">
+                                                        <span class="fund-progress-bar-fill" style="width: 40%;"></span>
+                                                    </div>
+                                                    <small>N5,000 raised of N20,000</small>
+                                                </div>
+                                            </div>
+                                </div>
+                                <div class="col-md-2">
+                                        <div class="card" style="width: 18rem;">
+                                                <img src="leaders.png" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                <h5 class="card-title">Title of fundraising</h5>
+                                                <p class="card-text">This is a brief note about what this fundraising is about. Only 2 lines...</p>
+                                                <small class="text-black-50">Last duration 1 day ago</small><small class="ml-5" style="color: #96B46B">8donations</small>
+                                                <div class="fund-progress-bar">
+                                                        <span class="fund-progress-bar-fill" style="width: 40%;"></span>
+                                                    </div>
+                                                    <small>N5,000 raised of N20,000</small>
+                                                </div>
+                                            </div>
+                                </div>
+                                <div class="col-md-2">
+                                        <div class="card" style="width: 18rem;">
+                                                <img src="scholarxvillage3.png" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Title of fundraising</h5>
+                                                    <p class="card-text">This is a brief note about what this fundraising is about. Only 2 lines...</p>
+                                                    <small class="text-black-50">Last duration 1 day ago</small><small class="ml-5" style="color: #96B46B">8donations</small>
+                                                    <div class="fund-progress-bar">
+                                                            <span class="fund-progress-bar-fill" style="width: 40%;"></span>
+                                                        </div>
+                                                        <small>N5,000 raised of N20,000</small>
+                                                </div>
+                                            </div>
+                                </div>
+                            </div>      
+    </main>
+    <footer></footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    
+    </body>
+    </html>
