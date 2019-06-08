@@ -1,0 +1,27 @@
+/* Google Fonts */
+body{
+    font-family: 'Mada', sans-serif;
+}
+nav.nav.footerpart{
+    margin-top: 150px;
+}
+
+/* responsive media query */
+@media (min-width: 375px) { 
+    .nav-link.facebooklogo{
+        margin-left: 100px;
+    }
+    nav.nav.footerpart{
+        margin-top: 290px;
+    }
+    
+}
+
+@media (max-width: 320px) { 
+    .nav-link.facebooklogo{
+        margin-left: 44px;
+    }
+    button.btn.btn-secondary.mt-4.ml-4.px-5{
+       
+    }
+ }
