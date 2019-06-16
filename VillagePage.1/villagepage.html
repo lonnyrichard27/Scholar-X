@@ -2,12 +2,12 @@
     <html lang="en">
     <head>
         <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <meta http-equiv="X-UA-Compatible" content="ie=edge">
-                    <title>Village Page</title>
-                        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-                            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-                                <link rel="stylesheet" href="villagepage.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Village Page</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="villagepage.css">
     </head>
     <body>
     <header>
@@ -18,14 +18,14 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-                    <div class="input-group form-rounded">
-                            <input type="text" class="form-control form-rounded" placeholder="Search">
-                            <div class="input-group-append">
-                              <button class="btn btn-secondary form-rounded" type="button">
-                                <i class="fas fa-search"></i>
-                              </button>
-                            </div>
-                          </div>
+            <form class="form-inline navbar-form">
+                <div class="input-group navbar-input">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1"><img src="http://scholarx-api.rc/img/search.png" alt="search" class="img-responsive"></span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Search for scholarship..." aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+            </form>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <div class="mr-auto"></div>
                 <ul class="navbar-nav navbar-right">
@@ -111,7 +111,7 @@
             </div>
             <div class="container">
                     <div class="row justify-content-between mr-5 mt-5">
-                        <div class="col-md-2 col-sm-2">
+                        <div class="col-md-2">
                                 <div class="card" style="width: 18rem;">
                                         <img src="campaignpersion(1).jpg" class="card-img-top" alt="...">
                                         <div class="card-body">
@@ -125,7 +125,7 @@
                                         </div>
                                     </div>
                         </div>
-                        <div class="col-md-2 col-sm-2">
+                        <div class="col-md-2">
                                 <div class="card" style="width: 18rem;">
                                         <img src="campaignperson(3).jpeg" class="card-img-top" alt="...">
                                         <div class="card-body">
@@ -139,7 +139,7 @@
                                         </div>
                                     </div>
                         </div>
-                        <div class="col-md-2 col-sm-2">
+                        <div class="col-md-2">
                                 <div class="card" style="width: 18rem;">
                                         <img src="campaignpersion(4).jpg" class="card-img-top" alt="...">
                                         <div class="card-body">
@@ -153,7 +153,7 @@
                                         </div>
                                     </div>
                         </div>
-                        <div class="col-md-2 col-sm-2">
+                        <div class="col-md-2">
                                 <div class="card" style="width: 18rem;">
                                         <img src="campaignperson(2).jpg" class="card-img-top" alt="...">
                                         <div class="card-body">
@@ -170,7 +170,7 @@
                     </div>  
                     <!-- second row of title of fundraising -->
                     <div class="row justify-content-between mr-5 mt-5">
-                        <div class="col-md-2 col-xs-2">
+                        <div class="col-md-2">
                                 <div class="card" style="width: 18rem;">
                                         <img src="scholarxvillage1.png" class="card-img-top" alt="...">
                                         <div class="card-body">
@@ -184,7 +184,7 @@
                                         </div>
                                     </div>
                         </div>
-                        <div class="col-md-2 col-xs-2">
+                        <div class="col-md-2">
                                 <div class="card" style="width: 18rem;">
                                         <img src="scholarxvillage2.png" class="card-img-top" alt="...">
                                         <div class="card-body">
@@ -198,7 +198,7 @@
                                         </div>
                                     </div>
                         </div>
-                        <div class="col-md-2 col-xs-2">
+                        <div class="col-md-2">
                                 <div class="card" style="width: 18rem;">
                                         <img src="scholarxvillage3.png" class="card-img-top" style="height:192px;">
                                         <div class="card-body">
@@ -212,7 +212,7 @@
                                         </div>
                                     </div>
                         </div>
-                        <div class="col-md-2 col-xs-2">
+                        <div class="col-md-2">
                                 <div class="card" style="width: 18rem;">
                                         <img src="leaders.png" class="card-img-top" style="height:192px;">
                                         <div class="card-body">
@@ -230,59 +230,52 @@
     <footer style="background-color: #0C5061;" class="text-white mt-4">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-xs-2">
+                <div class="col-md-6">
                     <h2 class="mt-5">We're here to help</h2>
-                    <p class="mt-3">Get the app on mobile</p>
-                        <div class="d-flex flex-row bd-highlight mb-3 mr-3">
-                            <div class="p-2 bd-highlight">
-                               <a href="#"><img src="Appstore.png" class=""></a>
-                            </div>
-                            <div class="p-2 bd-highlight">
-                               <a href="#"><img src="Googleplay.png" class="rounded mx-auto d-block"></a>
-                            </div>
-                        </div>
                 </div>
-                <div class="col-md-6 col-xs-2">
+                <div class="col-md-6">
                     <p class="mt-5">Our team is eager to assist you.If you need help getting started, or you're having trouble using scholarX, get in touch so we can help.</p>
                     <a href="#" style="color: #96B46B">Get help</a>
                 </div>
             </div>
-                <hr class=""/>
+                <hr class="mt-5"/>
                 <div class="row">
-                    <div class="col-md-6 col-xs-2">
+                    <div class="col-md-6">
                         <img src="logowhite.png" alt="">
                         <p class="text-white mt-3">Get notified on scholarships and funds, subscribe to our newsletter</p>
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control form-rounded" placeholder="E-mail Address" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                                <div class="input-group-append" >
-                                  <span class="input-group-text form-rounded text-white" id="basic-addon2"  style="background-color: #96B46B"><a href="#" class="text-white">Subscribe</a></span>
-                                </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control form-rounded" placeholder="Search">
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary px-5" style="background-color: #96B46B">Subscribe</button>
+                            </div>
                         </div>
-                       
+                        <p class="mt-5">Get the app on mobile</p>
                     </div>
-                    <div class="col-md-2 col-xs-2">
-                        <h5 class="font-weight-bold">Student</h5>
-                        <p class="font-weight-light">Create Scholarship</p>
-                        <p class="font-weight-light">Find scholarship</p>
-                        <p class="font-weight-light">Get help</p>
+                    <div class="col-md-2">
+                        <p class="font-weight-bold">Student</p>
+                        <p>Create Scholarship</p>
+                        <p>Find scholarship</p>
+                        <p>Get help</p>
                     </div>
-                    <div class="col-md-2 col-xs-2">
-                        <h5 class="font-weight-bold">Sponsor</h5>
-                        <p class="font-weight-light">Find Scholarship</p>
-                        <p class="font-weight-light">Start scholarship fund</p>
-                        <p class="font-weight-light">Get help</p>
+                    <div class="col-md-2">
+                        <p class="font-weight-bold">Sponsor</p>
+                        <p>Find Scholarship</p>
+                        <p>Start scholarship fund</p>
+                        <p>Get help</p>
                     </div>
-                    <div class="col-md-2 col-xs-2">
-                        <h5 class="font-weight-bold">About us</h5>
-                        <p class="font-weight-light">Team</p>
-                        <p class="font-weight-light">Impact</p>
-                        <p class="font-weight-light">News and media</p>
+                    <div class="col-md-2">
+                        <p class="font-weight-bold">About us</p>
+                        <p>Team</p>
+                        <p>Impact</p>
+                        <p>News and media</p>
                     </div>
                 </div>
         </div>
         <hr class="mt-5"/>
-        <nav class="nav footerpart">
-                <a class="nav-link text-white" href="#" style="color: #414B62;">&copy;2019 ScholarX All rights reserved</a>
+        <nav class="nav footerpart text-white">
+                <a class="nav-link" href="#" style="color: #414B62;">&copy;2019 ScholarX All rights reserved</a>
                 <div class="mr-auto"></div>
                 <a class="nav-link facebooklogo" href="#">
                     <img src="facebook.png" class="img-fluid">
@@ -295,7 +288,6 @@
                     </a>
               </nav>
     </footer>
-    <script src="https://kit.fontawesome.com/36485c726c.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    

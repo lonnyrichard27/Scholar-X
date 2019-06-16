@@ -4,40 +4,9 @@ body{
     background-color: #F4F4F4;
 }
 /* navbar styling */
-a.see-more-campaigns {
-    color: #8DB859;
-    background: white;
-    border: 1px solid #8DB859;
-    border-radius: 4px;
-    padding: 9px 20px;
-}
-
-form.form-inline.navbar-form {
-    margin-left: 70px;
-}
-.form-inline {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-}
-.input-group-prepend {
-    margin-right: -1px;
-}
-.input-group-prepend, .input-group-append {
-    display: flex;
-}
-.input-group > .form-control:not(:first-child), .input-group > .custom-select:not(:first-child) {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-}
-.navbar-form input.form-control {
-    border-left: none !important;
-    background: white;
-    border-radius: 0% 23px 23px 0%;
-}
-.navbar-form span#basic-addon1 {
-    background: white;
-    border-radius: 50% 0% 0 50%;
+.input-group.form-rounded {
+    width: 30%;
+    margin-left: 96px;
 }
 
 /* horizontal line */
@@ -51,13 +20,13 @@ hr.vertical {
     background-color: #f4F4F4!important;
     opacity: 0.9;
 }
-.fixed-top {
+/* .fixed-top {
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
     z-index: 1030;
-}
+} */
 
 /* Join us button */
 a.nav-link.joinus {
@@ -90,3 +59,67 @@ a.nav-link.joinus {
     border-radius: 18px;
     /* transition: width 500ms ease-in-out; */
 }
+
+/* horizontal line */
+hr { display: block; 
+    height: 1px;
+    border: 0; 
+    border-top: 1px solid #ccc;
+    margin: 1em 0; padding: 0; 
+}
+
+.form-rounded {
+    border-radius: 1rem;
+}
+
+
+
+
+/* responsive media query */
+@media (max-width: 375px) { 
+    .nav-link.facebooklogo{
+        margin-left: 100px;
+    }
+    nav.nav.footerpart{
+        margin-top: 20px;
+    }
+    .input-group.navbar-input {
+        margin-left: 15px;
+        margin-top: -47px;
+    }
+    a.navbar-brand {
+        margin-left: -14px;
+        margin-bottom: 4px;
+    }
+    .input-group.form-rounded {
+        width: 52%;
+        margin-left: 112px;
+        margin-top: -41px;
+    }
+}
+
+@media (max-width: 320px) { 
+    .nav-link.facebooklogo{
+        margin-left: 44px;
+    }
+    /* .input-group.navbar-input {
+        margin-left: 15px;
+        margin-top: -47px;
+    } */
+    a.navbar-brand {
+        margin-left: -14px;
+        margin-bottom: 4px;
+    }
+    .input-group.form-rounded {
+        width: 52%;
+        margin-left: 112px;
+        margin-top: -41px;
+    }
+ }
+ @media (max-width: 414px) {
+    .input-group.form-rounded {
+        width: 52%;
+        margin-left: 112px;
+        margin-top: -41px;
+    }
+ }

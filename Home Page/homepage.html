@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="homepage.css">
+    <script src="https://kit.fontawesome.com/36485c726c.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home page</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="http://scholarx-api.rc">
+                    <img src="http://scholarx-api.rc/img/ScholarX.png" alt="logo" class="img-responsive"
+                        style="height: 30px; width: 96px">
+                </a>
+                <div class="form-group mb-0  d-none d-md-flex" style="width:400px">
+                    <span class="input-group-prepend">
+                        <a href="#" class="input-group-text ss" id="btnGroupAddon"><i class="fas fa-search"></i></a>
+                    </span>
+                    <input type="text" class="form-control different" placeholder="Search for scholarships..."
+                        aria-label="Input group example" aria-describedby="btnGroupAddon" />
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <div class="mr-auto"></div>
+                    <ul class="navbar-nav navbar-right">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Students
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item"
+                                href="http://scholarx-api.rc/student/secondary/fundrequest/create">Create Fund
+                                Request</a>
+                            <a class="dropdown-item" href="#">Find Scholarship</a>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target=".gethelp-Modal">Get
+                                Help</a>
+                        </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Sponsor
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="http://scholarx-api.rc/village">Fund Education</a>
+                                <a class="dropdown-item" href="http://scholarx-api.rc/join/sponsor">Start Scholarship
+                                    Fund</a>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target=".gethelp-Modal">Get
+                                    Help</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                More
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item disabled" href="#">About Us</a>
+                                <a class="dropdown-item" href="http://scholarx-api.rc/team">Team</a>
+                                <a class="dropdown-item" href="http://scholarx-api.rc/team">Advisers</a>
+                                <a class="dropdown-item" href="http://scholarx-api.rc/team">Media Features</a>
+                                <a class="dropdown-item" href="http://scholarx-api.rc/impact">Impact</a>
+                                <a class="dropdown-item" href="http://scholarx-api.rc/blog">Blog</a>
+                                <a class="dropdown-item" target="_blank"
+                                    href="https://skillsfund.herokuapp.com">SkillsFund
+                                    <span class="skillsfund-new">(New)</span></a>
+                                <a class="dropdown-item disabled" href="#">Download App</a>
+                                <a class="dropdown-item"
+                                    href="https://itunes.apple.com/us/app/scholarx/id1135916663?ls=1&amp;mt=8">IOS</a>
+                                <a class="dropdown-item"
+                                    href="https://play.google.com/store/apps/details?id=com.scholarx.mobile2">Android</a>
+                                <a class="dropdown-item" href="https://wa.me/2349082463268" target="_blank"> <span> Chat
+                                        with us on </span> <br> 09082463268</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <hr class="vertical">
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://scholarx-api.rc/login">Log In</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link joinus" href="http://scholarx-api.rc/join-us">Join Us</a>
+                        </li>
+                        <li>
+                            <div class="form-group mb-0 d-flex d-sm-none mt-3 justi" style="width:400px">
+                                <span class="input-group-prepend">
+                                    <a href="#" class="input-group-text ss" id="btnGroupAddon"><i
+                                            class="fas fa-search"></i></a>
+                                </span>
+                                <input type="text" class="form-control different"
+                                    placeholder="Search for scholarships..." aria-label="Input group example"
+                                    aria-describedby="btnGroupAddon" />
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Nav Bar -->
+    </header>
+    <main>
+        <!-- carousel start -->
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active ">
+                    <img src="http://scholarx-api.rc/img/intro-bg(2).jpg" class="d-block w-100 img-responsive img-fluid"
+                        alt="background image" style="width: 100%">
+                    <div class="carousel-caption d-flex align-items-start flex-column bd-highlight mb-3"
+                        style="height: 200px; margin-bottom: -90rem">
+                        <div style="margin-top: -8rem">
+                            <h2 class="quality">Quality Education For the Next Billion</h2>
+                            <p class="text-left">The Trusted Platform For Financing Education In Africa</p>
+                        </div>
+                        <div class=" p-2 my-5 bd-highlight text-left">
+                            <p class="text-left">We are recognized by:</p>
+                            <img src="http://scholarx-api.rc/img/google_ launchpad.png" alt="google Developer Launchpad"
+                                class="img-responsive gec">
+                            <img src="http://scholarx-api.rc/img/injini.png" alt="worldsummitaward"
+                                class="img-responsive wsa">
+                            <img src="http://scholarx-api.rc/img/forbes.png" alt="forbes" class="img-responsive cnbc">
+                            <img src="http://scholarx-api.rc/img/next_bill.png" alt="Next Billion"
+                                class="img-responsive nis">
+                            <img src="http://scholarx-api.rc/img/wise.png" alt="sahara" class="img-responsive sah">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="http://scholarx-api.rc/img/intro-bg.jpg" class="d-block w-100 img-responsive img-fluid"
+                        alt="background image" style="width: 100%">
+                    <div class="carousel-caption d-flex d-sm-flex d-sm-flex align-items-start flex-column bd-highlight mb-3"
+                        style="height: 200px;  margin-top: -30rem">
+                        <div style="margin-top: -8rem">
+                            <h2 class="quality">Quality Education For the Next Billion</h2>
+                            <p class="text-left">The Trusted Platform For Financing Education In Africa</p>
+                        </div>
+                        <div class="p-2 my-5 bd-highlight text-left">
+                            <p class="text-left">We are recognized by:</p>
+
+                            <img src="http://scholarx-api.rc/img/google_ launchpad.png" alt="google Developer Launchpad"
+                                class="img-responsive gec">
+                            <img src="http://scholarx-api.rc/img/injini.png" alt="worldsummitaward"
+                                class="img-responsive wsa">
+                            <img src="http://scholarx-api.rc/img/forbes.png" alt="forbes" class="img-responsive cnbc">
+                            <img src="http://scholarx-api.rc/img/next_bill.png" alt="Next Billion"
+                                class="img-responsive nis">
+                            <img src="http://scholarx-api.rc/img/wise.png" alt="sahara" class="img-responsive sah">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="http://scholarx-api.rc/img/intro-bg(1).jpg" class="d-block w-100 img-responsive img-fluid"
+                        alt="background image" style="width: 100%;">
+                    <div class="carousel-caption d-flex d-sm-flex align-items-start flex-column bd-highlight mb-3"
+                        style="height: 200px; margin-top: -30rem">
+                        <div style="margin-top: -8rem">
+                            <h2 class="quality">Quality Education For the Next Billion</h2>
+                            <p class="text-left">The Trusted Platform For Financing Education In Africa</p>
+                        </div>
+                        <div class="p-2 my-5 bd-highlight text-left">
+                            <p>We are recognized by:</p>
+                            <img src="http://scholarx-api.rc/img/google_ launchpad.png" alt="google Developer Launchpad"
+                                class="img-responsive gec">
+                            <img src="http://scholarx-api.rc/img/injini.png" alt="worldsummitaward"
+                                class="img-responsive wsa">
+                            <img src="http://scholarx-api.rc/img/forbes.png" alt="forbes" class="img-responsive cnbc">
+                            <img src="http://scholarx-api.rc/img/next_bill.png" alt="Next Billion"
+                                class="img-responsive nis">
+                            <img src="http://scholarx-api.rc/img/wise.png" alt="sahara" class="img-responsive sah">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of carousel -->
+        <div class="container">
+            <h2 class="sponsors-header my-5">Sp<span>ons</span>ors</h2>
+            <div class="row">
+                <div class="col-sm-6">
+                    <h2>N50,000,000 worth of scholarships managed</h2>
+                    <p>Join us in changing access to funds for young Africans, because we believe dreams shouldn't be
+                        hindered by money.</p>
+                    <button type="button" class="btn btn-primary px-5 py-2" style="background-color: #96B46B">Fund
+                        Village</button>
+                    <a href="#" style="color: #96B46B" class="ml-5">Start a scholarship</a>
+                </div>
+                <div class="col-sm-6">
+                    <img src="Sponsors-image.png" class="img-responsive img-fluid">
+                </div>
+            </div>
+            <h2 class="sponsors-header my-5">St<span>ude</span>nts</h2>
+            <div class="row">
+                <img src="Rectangle 2.png" class="img-responsive img-fluid">
+                <div class="col-sm-6 ml-2">
+                    <h2>No child gets left behind without quality education</h2>
+                    <p>Join N10,000+ students to get funded.</p>
+                    <button type="button" class="btn btn-primary px-5 py-2" style="background-color: #96B46B">Create
+                        Fund request</button>
+                </div>
+            </div>
+        </div>
+        <div style="background-color: #0C5061" class="mt-5 text-white">
+            <div class="container">
+                <div class="row d-flex justify-content-end">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                        <h2 class="about-header my-5 text-center">Abou<span>t Sch</span>olarX</h2>
+                        <h3 class="tutionraised text-center">N10 million in tuition raised and disbursed</h3>
+                        <div class="text-left">
+                            <p class="">ScholarX is a social impact platform that focuses on democratizing Access to
+                                Education for African Youth, by connecting them with funding sources that enable them to
+                                get quality education.</p>
+                            <h3 class="about-header mission mt-5 text-center">Our <span>Mis</span>sion</h3>
+                            <p class="text-center mt-3">To put African students on a better life part through access to
+                                quality education.</p>
+                            <h3 class="about-header partners mt-5 text-center">Our <span>Par</span>tners</h3>
+                        </div>
+                        <div class="partnericons my-3">
+                            <img src="npower.png" class=" px-3 py-3">
+                            <img src="lagos innovates.png" class=" px-3 py-3">
+                            <img src="injini.png" class=" px-3 py-3">
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <a href="#"><button type="button" class="btn btn-outline-secondary my-5">More about the
+                                    team</button></a>
+                        </div>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+            </div>
+        </div>
+        <!-- impact stories -->
+        <div class="container">
+            <h2 class="impact-header text-center mt-5">Impa<span>ct S</span>tory</h2>
+            <div class="row justify-content-between mr-5 mt-5 ml-5">
+                <div class="card bg-light mb-3 " style="max-width: 29rem;">
+                    <div class="card-body line">
+                        <p class="card-text">Thank you scholarX for exposing hiding scholarships for Nigerian students
+                            home and abroad.</p>
+                        <small class="text-secondary">Adekunle Ibrahim, UNILAG</small>
+                        <br />
+                        <small class="text-secondary">(Winner Sheyi Shay giveaway)</small>
+                    </div>
+                </div>
+                <div class="card bg-light mb-3" style="max-width: 29rem;">
+                    <div class="card-body line">
+                        <div class="verticalLine">
+                            <p class="card-text">Now i can face my studies while ScholarX do the scholarship search for
+                                me and all i do is map the deadline to my calendar and apply later.</p>
+                            <small class="text-secondary">Ijaodola jamiu, LASU</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h4 class="text-center mt-5">Ready to make an impact on Education in Africa</h4>
+            <h4 class="text-center">Get Started</h4>
+            <div class="d-flex justify-content-center mt-5">
+                <a href="#"></a> <button type="button" class="btn btn-secondary px-5"
+                    style="background-color: #96B46B">As a student</button>
+                <button type="button" class="btn btn-secondary ml-3 px-5" style="background-color: #96B46B">As a
+                    sponsor</button>
+            </div>
+        </div>
+        <!-- end of impact stories -->
+    </main>
+    <footer style="background-color: #0C5061;" class="text-white mt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-xs-2">
+                    <h2 class="mt-5">We're here to help</h2>
+                    <p class="mt-3">Get the app on mobile</p>
+                    <div class="d-flex flex-row bd-highlight mb-3 mr-3">
+                        <div class="p-2 bd-highlight">
+                            <a href="#"><img src="Appstore.png" class=""></a>
+                        </div>
+                        <div class="p-2 bd-highlight">
+                            <a href="#"><img src="Googleplay.png" class="rounded mx-auto d-block"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xs-2">
+                    <p class="mt-5">Our team is eager to assist you.If you need help getting started, or you're having
+                        trouble using scholarX, get in touch so we can help.</p>
+                    <a href="#" style="color: #96B46B">Get help</a>
+                </div>
+            </div>
+            <hr class="" />
+            <div class="row">
+                <div class="col-md-6 col-xs-2">
+                    <img src="logowhite.png" alt="">
+                    <p class="text-white mt-3">Get notified on scholarships and funds, subscribe to our newsletter</p>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control form-rounded" placeholder="E-mail Address"
+                            aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <span class="input-group-text form-rounded text-white" id="basic-addon2"
+                                style="background-color: #96B46B"><a href="#" class="text-white">Subscribe</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-xs-2">
+                    <h5 class="font-weight-bold">Student</h5>
+                    <p class="font-weight-light">Create Scholarship</p>
+                    <p class="font-weight-light">Find scholarship</p>
+                    <p class="font-weight-light">Get help</p>
+                </div>
+                <div class="col-md-2 col-xs-2">
+                    <h5 class="font-weight-bold">Sponsor</h5>
+                    <p class="font-weight-light">Find Scholarship</p>
+                    <p class="font-weight-light">Start scholarship fund</p>
+                    <p class="font-weight-light">Get help</p>
+                </div>
+                <div class="col-md-2 col-xs-2">
+                    <h5 class="font-weight-bold">About us</h5>
+                    <p class="font-weight-light">Team</p>
+                    <p class="font-weight-light">Impact</p>
+                    <p class="font-weight-light">News and media</p>
+                </div>
+            </div>
+        </div>
+        <hr class="mt-5" />
+        <div class="d-flex bd-highlight">
+            <div class="p-2 flex-grow-1 bd-highlight">
+                <p>&copy; Scholarx All rights reserved</p>
+            </div>
+            <div class="p-2 bd-highlight">
+                <a href="#"><img src="facebook.png" alt=""></a>
+            </div>
+            <div class="p-2 bd-highlight">
+                <a href="#"><img src="twitter.png" alt=""></a>
+            </div>
+            <div class="p-2 bd-highlight">
+                <a href="#"><img src="instagram.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

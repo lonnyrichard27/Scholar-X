@@ -1,0 +1,101 @@
+/* google fonts */
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: #F4F4F4;
+}
+/* navbar styling */
+a.see-more-campaigns {
+    color: #8DB859;
+    background: white;
+    border: 1px solid #8DB859;
+    border-radius: 4px;
+    padding: 9px 20px;
+}
+
+form.form-inline.navbar-form {
+    margin-left: 70px;
+}
+.form-inline {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+.input-group-prepend {
+    margin-right: -1px;
+}
+.input-group-prepend, .input-group-append {
+    display: flex;
+}
+.input-group > .form-control:not(:first-child), .input-group > .custom-select:not(:first-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.navbar-form input.form-control {
+    border-left: none !important;
+    background: white;
+    border-radius: 0% 23px 23px 0%;
+}
+.navbar-form span#basic-addon1 {
+    background: white;
+    border-radius: 50% 0% 0 50%;
+}
+
+/* horizontal line */
+hr.vertical {
+    border: 2px solid white;
+    width: 0px;
+    height: 100%;
+    margin-top: 0px;
+}
+.bg-light {
+    background-color: #f4F4F4!important;
+    opacity: 0.9;
+}
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+/* Join us button */
+a.nav-link.joinus {
+    background-color: #8DB859;
+    color: #fff !important;
+    box-shadow: 0px 3px;
+    width: 85px;
+    text-align: center;
+    margin-left: 10px;
+    border-radius: 3px;
+}
+
+/* carousel */
+.font-weight-bolder1{
+    font-weight: bolder!important;
+}
+
+/* progress bar */
+.fund-progress-bar {
+    width: 100%;
+    background-color: #E5E5E5;
+    /* padding: 3px; */
+    border-radius: 22px;
+    /* box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2); */
+}
+.fund-progress-bar-fill {
+    display: block;
+    height: 9px;
+    background-color: #8db859;
+    border-radius: 18px;
+    /* transition: width 500ms ease-in-out; */
+}
+
+/* horizontal line */
+hr { display: block; height: 1px;
+    border: 0; border-top: 1px solid #ccc;
+    margin: 1em 0; padding: 0; 
+}
+.form-rounded {
+    border-radius: 1rem;
+}

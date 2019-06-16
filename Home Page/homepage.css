@@ -1,0 +1,132 @@
+/* google fonts */
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #F4F4F4;
+}
+
+/* navbar styling */
+a.nav-link.joinus {
+    background-color: #8DB859;
+    color: #fff !important;
+    box-shadow: 0px 3px;
+    border-radius: 3px;
+}
+
+.input-group-text.ss{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+    left: 60px;
+    padding-right: 30px;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    text-align: center;
+    white-space: nowrap;
+    background-color: transparent;
+    border: none;
+    border-radius: .25rem;
+    z-index: 2;
+}
+
+a.input-group-text.ss:hover {
+    text-decoration: none;
+}
+
+.different::placeholder {
+    padding-left: 30px;
+}
+
+.different {
+    border-radius: 10rem;
+}
+
+/* horizontal line */
+hr.vertical {
+    border: 2px solid white;
+    width: 0px;
+    height: 100%;
+    margin-top: 0px;
+}
+
+.bg-light {
+    background-color: #f4F4F4 !important;
+    opacity: 0.9;
+}
+
+h2.sponsors-header {
+    font-size: 32px;
+    text-align: center !important;
+}
+
+.sponsors-header span {
+    border-bottom: 3px solid #0C5061;
+}
+
+/* about section */
+
+.about-header span {
+    border-bottom: 3px solid white;
+}
+
+.btn-outline-secondary {
+    color: #96B46B;
+    border-color: #96B46B;
+}
+
+/* impact */
+.impact-header span {
+    border-bottom: 3px solid #0C5061;
+}
+
+.card-body.line {
+    border-left: thick solid #0c5061;
+
+}
+
+/* partnericons */
+.partnericons {
+    margin-left: 6rem;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/* div#carouselExampleFade {
+    margin-top: 5rem;
+} */
+
+
+@media (max-width: 570px) {
+
+    .carousel-item {
+        height: 63vh;
+    }
+
+    .quality {
+        font-size: xx-large;
+    }
+
+    img.d-block.w-100.img-responsive {
+        height: 66vh;
+        object-fit: cover;
+    }
+
+    .p-2.my-5.bd-highlight.d-sm-inline-flex {
+        margin-left: -3rem;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
