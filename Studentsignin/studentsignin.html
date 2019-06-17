@@ -12,22 +12,23 @@
 </head>
 <body>
 <header>
-    <nav class="nav">
-        <a class="nav-link active" href="#">
-            <img src="logo.png" alt="">
-        </a>
-    <div class="mr-auto"></div>
-        <a class="nav-link mt-2 mr-4" href="" style="color: black">Dont't have an account?</a>
-        <a class="nav-link mt-2 mr-4" href="#" style="color: #96B46B">SignUp</a>
-    </nav>
+        <nav class="nav">
+                <a class="nav-link active" href="#">
+                    <img src="logo.png" alt="">
+                </a>
+                <div class="mr-auto"></div>
+                <a class="nav-link mt-2 mr-4" href="" style="color: black">Dont't have an account?</a>
+                <a class="nav-link mt-2 mr-4" href="#" style="color: #96B46B">SignUp</a>
+              </nav>
 </header>
-<main>
+<main class="mt-4">
     <div class="card ml-5" style="width: 18rem;">
             <a href="#">
                 <div class="card-body">
                   <h5 class="card-title"></h5>
                   <h6 class="card-subtitle mb-2 text-muted"></h6>
-                  <p class="card-text text-decoration-none" style="color: #96B46B">Click to upload your photo.</p>
+                  <p class="card-text text-decoration-none" style="color: #96B46B">
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1" multiple>Click to upload your photo.</p>
                   <a href="#" class="card-link"></a>
                   <a href="#" class="card-link"></a>
                 </div>
@@ -56,15 +57,15 @@
 
                 <p class="mt-5">Gender:</p>
                 <div class="form-check form-check-inline mb-5">
-                        <input class="form-check-input" type="radio" id="inlineCheckbox1" value="option1">
+                        <input class="form-check-input" type="radio" id="inlineCheckbox1" value="option1" name="gender">
                         <label class="form-check-label" for="inlineCheckbox1">Male</label>
                 </div>
                 <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" id="inlineCheckbox2" value="option2">
+                            <input class="form-check-input" type="radio" id="inlineCheckbox2" value="option2" name="gender">
                             <label class="form-check-label" for="inlineCheckbox2">Female</label>
                 </div>
                 <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" id="inlineCheckbox3" value="option3">
+                            <input class="form-check-input" type="radio" id="inlineCheckbox3" value="option3" name="gender">
                             <label class="form-check-label" for="inlineCheckbox3">Others</label>
                 </div>
                 <form>
@@ -192,25 +193,29 @@
                               <br>
                           <small>Identify the document you have from the list and upload them. Documents are expected to either be
                               in either of the following formats; JPEG,MS word(doc or docx*) or PDF file no larger than 500kb in size.</small>
-                          <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                          <input type="file" class="form-control-file" id="exampleFormControlFile1" multiple>
                         </div>
-                </form>
-                <form>
-                        <div class="form-group">
-                          <label for="exampleFormControlFile1">
-                              <h3>Upload a document</h3>
-                              </label>
-                              <br>
-                          <small>Identify the document you have from the list and upload them. Documents are expected to either be
-                              in either of the following formats; JPEG,MS word(doc or docx*) or PDF file no larger than 500kb in size.</small>
-                          <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                        </div>
-                </form>                                    
+                </form>                   
             </div>
         </div>
     </div>
 </main>
-<footer></footer>
+<footer>
+        <div class="d-flex bd-highlight" style="margin-top: 9rem">
+                <div class="p-2 flex-grow-1 bd-highlight">
+                    <p>&copy; Scholarx All rights reserved</p>
+                </div>
+                <div class="p-2 bd-highlight">
+                    <a href="#"><img src="facebook.png" alt=""></a>
+                </div>
+                <div class="p-2 bd-highlight">
+                    <a href="#"><img src="twitter.png" alt=""></a>
+                </div>
+                <div class="p-2 bd-highlight">
+                    <a href="#"><img src="instagram.png" alt=""></a>
+                </div>
+              </div>
+</footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
