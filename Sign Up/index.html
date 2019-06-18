@@ -12,25 +12,14 @@
 <body class="bg-light">
     <header>
         <!-- navigation bar -->
-            <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-light">
-                <a class="navbar-brand" href="#">
-                    <img src="logo.png" class="img-fluid">
+        <nav class="nav">
+                <a class="nav-link active" href="#">
+                    <img src="logo.png" alt="">
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <div class="mr-auto"></div>
-                  <ul class="navbar-nav">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">Already have an account?<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#" style="color:#8DB859">Log In</a>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
+                <div class="mr-auto"></div>
+                <a class="nav-link mt-2 mr-4" href="" style="color: black">Dont't have an account?</a>
+                <a class="nav-link mt-2 mr-4" href="#" style="color: #96B46B">SignUp</a>
+                </nav>
 </header>
 <main>
     <div>
@@ -43,50 +32,52 @@
 <div class="container">
     <div class="row">
         <div class="col-md-6">
+       <form action="" method="post">
             <div class="form-row">
-                <div class="form-group col-md-6">
-                    <label for="inputfirstname">First Name</label>
-                    <input type="text" class="form-control" id="inputFirstName">
+                    <div class="form-group col-md-6">
+                        <label for="inputfirstname">First Name</label>
+                        <input type="text" class="form-control" id="inputFirstName">
+                    </div>
+                        <div class="form-group col-md-6 col-sm-6">   
+                            <label for="inputlastname">Last Name</label>
+                            <input type="text" class="form-control" id="inputLastName">
+                        </div> 
+                          </div>
+                            <div class="form-group">
+                                <label for="inputCity">E-mail Address</label>
+                                <input type="email" class="form-control" id="inputCity">
+                            </div>   
+                          <div class="form-row">
+                                <div class="form-group col-md-3 col-sm-2">
+                                    <small>Phone Number</small>
+                                        <label for="inputfirstname"></label>
+                                        <input type="text" class="form-control" id="inputFirstName">
+                                    </div>
+                                        <div class="form-group col-md-9 col-sm-10">   
+                                            <label for="inputlastname"></label>
+                                            <input type="number" class="form-control" id="inputLastName">
+                                        </div> 
+                                            </div>
+                                        <div class="form-row">
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputfirstname">Password</label>
+                                                    <input type="password" class="form-control" id="inputFirstName">
+                                                </div>
+                                                    <div class="form-group col-md-6">   
+                                                        <label for="inputlastname">Confirm password</label>
+                                                        <input type="password" class="form-control" id="inputLastName">
+                                                    </div> 
+                                                  </div>
+       </form>     
+            
+            <!-- buttons -->
+            <button type="button" class="btn btn-primary btn-lg btn-block" style="background-color:#8DB859">Join</button>
+                <div class="flex">
+                    <button type="button" class="btn btn-primary pl-5 mt-4 px-5" style="background-color:#1D4294">Log in with Facebook</button>
+                    <button type="button" class="btn btn-secondary mt-4 px-5" style="background-color:#D84830">Log in with Gmail</button>
                 </div>
-                    <div class="form-group col-md-6 col-sm-6">   
-                        <label for="inputlastname">Last Name</label>
-                        <input type="text" class="form-control" id="inputLastName">
-                    </div> 
-                      </div>
-                        <div class="form-group">
-                            <label for="inputCity">E-mail Address</label>
-                            <input type="email" class="form-control" id="inputCity">
-                        </div>   
-                      <div class="form-row">
-                            <div class="form-group col-md-3 col-sm-2">
-                                <small>Phone Number</small>
-                                    <label for="inputfirstname"></label>
-                                    <input type="text" class="form-control" id="inputFirstName">
-                                </div>
-                                    <div class="form-group col-md-9 col-sm-10">   
-                                        <label for="inputlastname"></label>
-                                        <input type="number" class="form-control" id="inputLastName">
-                                    </div> 
-                                        </div>
-                                    <div class="form-row">
-                                            <div class="form-group col-md-6">
-                                                <label for="inputfirstname">Password</label>
-                                                <input type="password" class="form-control" id="inputFirstName">
-                                            </div>
-                                                <div class="form-group col-md-6">   
-                                                    <label for="inputlastname">Confirm password</label>
-                                                    <input type="password" class="form-control" id="inputLastName">
-                                                </div> 
-                                              </div>
-                                              <!-- buttons -->
-                                              <button type="button" class="btn btn-primary btn-lg btn-block" style="background-color:#8DB859">Join</button>
-                                                    <div class="flex">
-                                                        <button type="button" class="btn btn-primary pl-5 mt-4 px-5" style="background-color:#1D4294">Log in with Facebook</button>
-                                                        <button type="button" class="btn btn-secondary mt-4 px-5" style="background-color:#D84830">Log in with Gmail</button>
-                                                    </div>
-                                            </div>
+        </div>
 <!-- what you get (second row) -->
-
         <div class="col-md-6 col-sm-6 bg-white">
             <h2 class="font-weight-normal pt-3 pl-3">What you get with a free account</h2>
                 <nav class="nav">

@@ -1,0 +1,8 @@
+/* google fonts */
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: #F4F4F4;
+}
+.sponsors-header span {
+    border-bottom: 3px solid #0C5061;
+}

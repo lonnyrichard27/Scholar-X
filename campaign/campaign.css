@@ -8,15 +8,21 @@ body{
 }
 
 
-
-@media (min-width: 576px) {
-    .d-flex.justify-content-end{
-        margin-left: 12rem;
+@media (max-width: 576px) {
+    footer{
+        margin-top: 19rem;
     }
- }
 
-/* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { }
-
+@media (min-width: 768px) { 
+    footer{
+        margin-top: 42rem;
+    }
+}
+}
 /* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {  }
+/* @media (max-width: 1024px) {
+    footer{
+        margin-top: 62rem;
+    }
+  }
+} */
