@@ -1,0 +1,41 @@
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: #E5E5E5;
+}
+
+hr{
+    border-bottom: 3px solid #0C3061;
+}
+.bluepart{
+    background-color: #EBF8FE;
+    height: 6rem;
+}
+.card.mt-3.skills {
+    margin-left: 10rem;
+    height: 6rem;
+}
+.card.mt-3.quickstaff {
+    margin-left: 10rem;
+    height: 6rem;
+}
+.card.mt-3.scholar {
+    height: 6rem;
+}
+.card.mt-3.fund {
+    height: 6rem;
+}
+img.scholar.h-50 {
+    margin-left: 5rem;
+}
+img.skills.h-50 {
+    margin-left: 7rem;
+    margin-top: -7px;
+}
+img.fund.h-50 {
+    margin-left: 9rem;
+    margin-top: -7px;
+}
+img.quickstaff.h-50 {
+    margin-left: 8rem;
+    margin-top: -11px;
+}
