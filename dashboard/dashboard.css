@@ -1,0 +1,58 @@
+/* Google Fonts */
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: #E5E5E5;
+}
+
+hr{
+    border-bottom: 3px solid #0C3061;
+}
+.bluepart{
+    background-color: #EBF8FE;
+    height: 6rem;
+}
+.fund-progress-bar {
+    width: 100%;
+    background-color: #E5E5E5;
+    border-radius: 22px;
+}
+.fund-progress-bar-fill {
+    display: block;
+    height: 9px;
+    background-color: #E7C40C;
+    border-radius: 18px;
+}
+.col-sm-3.apply {
+    margin-left: 5rem;
+}
+.col-sm-3.subscribe {
+    margin-left: 6rem;
+}
+/* .line_break{
+    width:656px;
+    height: 5px;
+    color: black;
+    border: none;
+    border-bottom: 3px solid #DEE3E3;
+} */
+
+@media (max-width: 576px){
+    .col-sm-3.kings{
+        margin-top: 2rem;
+    }
+    .d-flex.flex-column.bd-highlight.flex-sm-column {
+        margin-left: 5rem;
+        margin-top: -7rem;
+    }
+    .bluepart{
+        background-color: #EBF8FE;
+        height: 14rem;
+    }
+    .col-sm-3.apply {
+        margin-left: 0rem;
+    }
+    .col-sm-3.subscribe {
+        margin-left: -3rem;
+        margin-top: -4rem;
+    }
+}
