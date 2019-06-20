@@ -10,6 +10,10 @@ hr{
     background-color: #EBF8FE;
     height: 6rem;
 }
+.toptext {
+    margin-top: -3rem;
+    margin-left: 6rem;
+}
 .card.mt-3.skills {
     margin-left: 10rem;
     height: 6rem;
@@ -21,12 +25,7 @@ hr{
 .card.h-50 {
     margin-top: 1rem;
 }
-.card.mt-3.scholar {
-    height: 6rem;
-}
-.card.mt-3.fund {
-    height: 6rem;
-}
+
 img.scholar.h-50 {
     margin-left: 5rem;
 }
@@ -68,11 +67,27 @@ img.quickstaff.h-50 {
     border-color: #8db859;
     color: #8db859;
 }
+.card.apply {
+    margin-top: 1rem;
+    margin-left: -10px;
+    height: 5rem;
+}
+.card.fund {
+    margin-top: 1rem;
+    margin-left: -1px;
+    height: 5rem;
+}
+.card.quickstaff{
+    margin-left: -10px;
+    height: 5rem;
+    margin-top: 1rem;
+}
 
 
 @media (max-width: 576px){
     .col-sm-3.kings{
         margin-top: 2rem;
+        
     }
     .d-flex.flex-column.bd-highlight.flex-sm-column {
         margin-left: 5rem;
@@ -80,7 +95,7 @@ img.quickstaff.h-50 {
     }
     .bluepart{
         background-color: #EBF8FE;
-        height: 14rem;
+        height: 10rem;
     }
     .col-sm-3.apply {
         margin-left: 0rem;
@@ -90,13 +105,89 @@ img.quickstaff.h-50 {
         margin-left: -3rem;
         margin-top: -4rem;
     }
-    .card.mt-3.h-50{
-        margin-top: -2rem;
+    .card.h-50{
+        margin-top: 2rem;
+        margin-left: -10px;
     }
-    .card.h-50.apply {
-
+    .card.apply {
+        margin-top: -3rem;
+        margin-left: -10px;
+        height: 5rem;
     }
-    .skillsfunds{
-
+    .card.fund {
+        margin-top: 5rem;
+        margin-left: -10px;
+        height: 5rem;
+    }
+    .card.quickstaff{
+        margin-top: 5rem;
+        margin-left: -10px;
+        height: 5rem;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 800px){
+    .card.h-50{
+        margin-top: 2rem;
+        margin-left: -10px;
+    }
+    .card.apply {
+        margin-top: 2rem;
+        margin-left: 7rem;
+        height: 5rem;
+    }
+    .card.fund {
+        margin-top: 2rem;
+        margin-left: -10px;
+        height: 5rem;
+    }
+    .card.quickstaff{
+        margin-top: 2rem;
+        margin-left: 7rem;
+        height: 5rem;
+    }
+    .col-sm-2.my-3.first {
+        margin-left: -3rem;
+    }
+    .col-sm-2.my-3.second {
+        margin-left: 11rem;
+    }
+    .col-sm-2.my-3.third {
+        margin-left: 11rem;
+    }
+    .col-sm-2.my-3.fourth {
+        margin-left: -3rem;
+    }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1030px){
+    .card.h-50{
+        margin-top: 2rem;
+        margin-left: -10px;
+    }
+    .card.apply {
+        margin-top: 2rem;
+        margin-left: 7rem;
+        height: 5rem;
+    }
+    .card.fund {
+        margin-top: 2rem;
+        margin-left: -10px;
+        height: 5rem;
+    }
+    .card.quickstaff{
+        margin-top: 2rem;
+        margin-left: 7rem;
+        height: 5rem;
+    }
+    .col-sm-2.my-3.first {
+        margin-left: -4rem;
+    }
+    .col-sm-2.my-3.second {
+        margin-left: 0rem;
+    }
+    .col-sm-2.my-3.third {
+        margin-left: 0rem;
+    }
+    .col-sm-2.my-3.fourth {
+        margin-left: 0rem;
     }
 }
