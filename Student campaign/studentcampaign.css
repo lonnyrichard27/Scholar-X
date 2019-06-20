@@ -1,0 +1,25 @@
+.fund-progress-bar {
+    width: 100%;
+    background-color: #E5E5E5;
+    border-radius: 22px;
+
+}
+.fund-progress-bar-fill {
+    display: block;
+    height: 9px;
+    background-color: #8db859;
+    border-radius: 18px;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #3A455C;
+    border-color: #3A455C;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #8db859;
+    border-color: #8db859;
+}
+.thousand{
+    color: #4A90E2;
+}
