@@ -86,8 +86,7 @@ img.quickstaff.h-50 {
 
 @media (max-width: 576px){
     .col-sm-3.kings{
-        margin-top: 2rem;
-        
+        margin-top: 2rem;   
     }
     .d-flex.flex-column.bd-highlight.flex-sm-column {
         margin-left: 5rem;
